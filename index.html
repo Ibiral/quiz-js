@@ -1,17 +1,136 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Quiz d'allemand</h1>
+    <div class="quiz-container">
+      <form>
+        <div class="question-container">
+          <h3>Ich ____ einen Hund</h3>
+          <div>
+            <input
+              type="radio"
+              id="answer1"
+              name="question1"
+              value="A"
+              checked
+            />
+            <label for="answer1">hat</label>
+          </div>
+          <div>
+            <input type="radio" id="answer2" name="question1" value="B" />
+            <label for="answer2">habe</label>
+          </div>
+          <div>
+            <input type="radio" id="answer3" name="question1" value="C" />
+            <label for="answer3">hast</label>
+          </div>
+        </div>
 
+        <div class="question-container">
+          <h3>Comment dire: J'ai froid.</h3>
+          <div>
+            <input
+              type="radio"
+              id="answer4"
+              name="question2"
+              value="A"
+              checked
+            />
+            <label for="answer4">Ich habe kalt</label>
+          </div>
+          <div>
+            <input type="radio" id="answer5" name="question2" value="B" />
+            <label for="answer5">Ich bin kalt</label>
+          </div>
+          <div>
+            <input type="radio" id="answer6" name="question2" value="C" />
+            <label for="answer6">Mir ist kalt</label>
+          </div>
+        </div>
 
+        <div class="question-container">
+          <h3>___ Wagen</h3>
+          <div>
+            <input
+              type="radio"
+              id="answer7"
+              name="question3"
+              value="A"
+              checked
+            />
+            <label for="answer7">Der</label>
+          </div>
+          <div>
+            <input type="radio" id="answer8" name="question3" value="B" />
+            <label for="answer8">Die</label>
+          </div>
+          <div>
+            <input type="radio" id="answer9" name="question3" value="C" />
+            <label for="answer9">Das</label>
+          </div>
+        </div>
+
+        <div class="question-container">
+          <h3>Er spricht mit ____ Bruder.</h3>
+          <div>
+            <input
+              type="radio"
+              id="answer10"
+              name="question4"
+              value="A"
+              checked
+            />
+            <label for="answer10">sein</label>
+          </div>
+          <div>
+            <input type="radio" id="answer11" name="question4" value="B" />
+            <label for="answer11">seinen</label>
+          </div>
+          <div>
+            <input type="radio" id="answer12" name="question4" value="C" />
+            <label for="answer12">seinem</label>
+          </div>
+        </div>
+
+        <div class="question-container">
+          <h3>Man _____ nicht rauchen!</h3>
+          <div>
+            <input
+              type="radio"
+              id="answer13"
+              name="question5"
+              value="A"
+              checked
+            />
+            <label for="answer13">darf</label>
+          </div>
+          <div>
+            <input type="radio" id="answer14" name="question5" value="B" />
+            <label for="answer14">kann</label>
+          </div>
+          <div>
+            <input type="radio" id="answer15" name="question5" value="C" />
+            <label for="answer15">mag</label>
+          </div>
+        </div>
+
+        <button type="submit">Valider</button>
+      </form>
+      <h2>Cliquez sur valider pour afficher les résultats !</h2>
+      <p class="help"></p>
+      <p class="note"></p>
+    </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
